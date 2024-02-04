@@ -15,6 +15,7 @@ header{
     background-image: url("r.images/hero.image.png");
     background-color: black;
     background-size: cover;
+    overflow-x: hidden;
 }
 nav{
     display: flex;
