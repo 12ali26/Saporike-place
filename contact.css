@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Niramit';
+    margin: 0;
+    padding: 0;
+    color: white;
+    background:#282a2c;
+}
+header{
+    width: 100%;
+    min-height: 100vh;
+    background: url("r.images/hero\ 4.png");
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+}
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(255, 254, 254);
+    padding: .75em 2em;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+
+}
+.nav-link::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    transition: 0.3s ease;
+}
+.nav-link:hover::before, .active::before{
+    width: 100%;
+}
+nav img{
+    height: 55px;
+}
+.hero{
+    /* border: 2px solid white; */
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    margin: 3em auto;
+}
+.container {
+    display: flex;
+    border: 2px solid white;
+    backdrop-filter:  blur(30px) saturate(180%);
+   
+}
+.contact-info {
+    flex: 1;
+    padding: 20px;
+    background-color:transparent;
+ 
+}
+.contact-info h1 {
+    font-size: 24px;
+}
+.contact-info p {
+    margin: 10px 0;
+}
+.subscribe-form {
+    flex: 1;
+    padding: 20px;
+    background-color:transparent;
+}
+.subscribe-form h2 {
+    font-size: 24px;
+}
+.subscribe-form form {
+    margin-top: 20px;
+}
+.subscribe-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.subscribe-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color:transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.subscribe-form input[type="submit"]:hover {
+    background-color:rgb(255, 138, 138);
+    color: black;
+}

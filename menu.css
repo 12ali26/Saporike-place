@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Niramit';
+    margin: 0;
+    padding: 0;
+    color: white;
+    background:#282a2c;
+}
+header{
+    width: 98%;
+    min-height: 90vh;
+    margin: auto;
+    background: url("r.images/image\ 31.jpeg");
+    background-color: black;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+}
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(255, 254, 254);
+    padding: .75em 2em;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+
+}
+.nav-link::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    transition: 0.3s ease;
+}
+.nav-link:hover::before, .active::before{
+    width: 100%;
+}
+nav img{
+    height: 55px;
+}
+.hero{
+    max-width: 75%;
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+}
+.breakfast{
+    display: flex;
+    margin: 4em auto;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+}
+.s-image{
+    height: 70vh;
+    border-radius: 10px;
+}
+
+
+.food{
+    position: relative;
+    padding: 5em;
+    max-width: 70vw;
+    /* border: 2px solid white; */
+}
+.food h2{
+    text-align: center;
+    font-size: 30px;
+}
+.price{
+  position: absolute;
+  right: 4%; 
+}
+.selections{
+    font-size: 20px;
+    line-height: 1em;
+}
+.selections li{
+    margin-block: 1.5em;
+}
+.small-words{
+    font-style: italic;
+    font-size: 14px;
+}
